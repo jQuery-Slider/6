@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>Forbidden</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+  <style type="text/css">
+  <!--
+    html, body { padding: 0px; margin: 0px; }
+    .menu { padding: 4px 10px 4px 10px; border-bottom: 3px double #999999; background: #FFFFFF; font-size: 85%; font-weight: bold; }
+    p { text-align: justify }
+    h1 { font-size: 150%; }
+    h2 { font-size: 130%; }
+  -->
+  </style>
+</head>
+
+<body bgcolor="white" text="#000000" link="#00639C" alink="#ffaa00" vlink="#00437C">
+
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+  <td bgcolor="#DEDFDE" width="80%" style="border-right: 1px outset">
+        <div style="width=100%; padding: 0px 10px 4px 10px">
+            <h1 style="margin-top: 0.2em">Forbidden</h1>
+
+You don't have permission to access /slider-fьr-jquery.html 
+on this server.<P>
+
+<h2>Подсказка Денвера</h2>
+
+Возможные причины ошибки:
+
+<ul>
+<li>Вы пытаетесь запустить CGI-скрипт, расположив его <i>вне</i> CGI-директории 
+(например, в директории документов сервера www). Корректные пути к CGI-директориям 
+следующие:
+
+<p><table border=0 cellpadding=3 cellcpacing=1>
+<tr bgcolor=silver>
+	<td><b>URL</td>
+	<td><b>Куда указывает</td>
+</tr>
+<tr bgcolor=#EEEEEE>
+	<td nowrap><tt>http://***/cgi-glob/script.cgi</td>
+	<td nowrap><tt>/home/cgi-glob/script.cgi</td>
+</tr>
+<tr bgcolor=#EEEEEE>
+	<td nowrap><tt>http://***/cgi/script.cgi</td>
+	<td nowrap><tt>/home/***/cgi/script.cgi</td>
+</tr>
+<tr bgcolor=#EEEEEE>
+	<td nowrap><tt>http://***/cgi-bin/script.cgi</td>
+	<td nowrap><tt>/home/***/cgi-bin/script.cgi</td>
+</tr>
+</table>
+<p>
+<p>При большом желании вы все же можете запускать скрипты и из www-директории. Для этого 
+создайте в ней файл <tt>.htaccess</tt> (с точкой в 
+начале) следующего содержания:
+<pre>
+Options +ExecCGI
+</pre>
+
+<li>Возможно, вы пытаетесь открыть картинку или статический HTML-файл, расположенный 
+в CGI-директории. Этого делать нельзя. Все рисунки (а также другие файлы, за исключениям 
+скриптов) необходимо помещать в www-директорию. См. примеры по адресу <tt>/home/localhost/www</tt>. 
+
+
+<li>Если вы ожидаете получить листинг каталога, но выводится эта ошибка, вероятно, для
+данной директории выдача листинга запрещена (например, это CGI-папка). Чтобы 
+разрешить листинг, создайте в нужной директории файл <tt>.htaccess</tt> следующего содержания:
+<pre>
+Options +Indexes
+</pre>
+
+
+</ul>
+
+              <br/><br/>
+        <HR noshade="noshade" />
+        <address>Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 Server at test1.ru Port 80</address>
+          </div>
+  </td>
+  <td bgcolor="#000000">&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>
